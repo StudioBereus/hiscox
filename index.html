@@ -1,0 +1,336 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Hyscox</title>
+</head>
+
+<body>
+    <header>
+        <!--Menu-->
+        <nav>
+
+        </nav>
+
+        <!--Barre de recherche-->
+        <a href="#">
+            <input type="text" name="recherche" id="recherche" placeholder="Une question?" class="barre_recherche">
+        </a>
+
+        <!--Logo Hiscox centré-->
+        <div class="conteneur_logo">
+
+        </div>
+
+        <!--Bouton etre rappelé-->
+        <a href="#" class="hidden" id="hidden_1">
+            <input type="button" value="Etre appelé" class="appel" id="appel">
+        </a>
+
+        <!--Bouton mon espace-->
+        <a href="#" class="hidden" id="hidden_1">
+            <input type="button" value="Mon espace">
+        </a>
+
+        <!--Barre de progression-->
+        <img src="img/barre_progression" alt="barre_prog" id="barre_prog" class="barre_prog">
+        <div class="remplissage_1" id="remplissage_1"></div>
+        <div class="remplissage_2" id="remplissage_2"></div>
+        <div class="remplissage_3" id="remplissage_3"></div>
+
+    </header>
+
+    <body>
+        <!--¨Présentation et accroche-->
+        <p class="presentation">Assureur spécialiste des petites entreprises et des indépendants</p>
+        <p class="votre_attestation">Votre attestation d'assurance en 3 minutes</p>
+
+        <!--Avis avec etoiles-->
+        <div class="avis">
+
+        </div>
+
+        <!--Page blanche -->
+        <fieldset class="page_blanche">
+
+            <!--Debut de formulaire-->
+            <form action="index.php" method="post" class="formulaire_progressif">
+
+                <!--Partie 1-->
+                <div id="part1">
+
+                    <!--Domaine d'activité-->
+                    <label for="domaine">
+                        <div class="domaine">
+                            <p class="indic">Votre domaine d'activité :</p>
+                            <select name="domaine" id="choix_domaine">
+                                <option value="ewemple_1">Exemple 1</option>
+                                <option value="exemple_2">Exemple 2</option>
+                                <option value="exemple_3">Exemple 3</option>
+                                <option value="exemple_4">Exemple 4</option>
+                            </select>
+                        </div>
+                    </label>
+
+                    <!--Activité principale-->
+                    <label for="activite">
+                        <div class="activite">
+                            <p class="indic">Votre activité principale :</p>
+                            <select name="domaine" id="choix_activite">
+                                <option value="ewemple_1">Exemple 1</option>
+                                <option value="exemple_2">Exemple 2</option>
+                                <option value="exemple_3">Exemple 3</option>
+                                <option value="exemple_4">Exemple 4</option>
+                            </select>
+                        </div>
+                    </label>
+
+                    <!--Chiffre d'affaires-->
+                    <label for="chiffre_affaire">
+                        <div class="chiffre">
+                            <p class="indic">Votre chiffre d'affaires :</p>
+                            <input type="number" name="chiffre_affaires" id="chiffre_affaires"
+                                placeholder="ex: 95 000€">
+                        </div>
+                    </label>
+
+                    <input type="button" value="Obtenir mon devis" id="obt_devis" class="red_button">
+                </div>
+
+                <!--Partie 2-->
+                <div id="part2">
+                    <p class="question">Que souhaitez-vous assurer ?</p>
+
+                    <!--ligne 1-->
+                    <label for="responsabilite">
+                        <input type="radio" name="responsabilite" id="responsabilite">
+                        <div class="carte" id="carte_1">
+                            Responsabilité Civile Décénnale
+                        </div>
+                    </label>
+
+                    <label for="bureaux">
+                        <input type="radio" name="bureaux" id="bureaux">
+                        <div class="carte" id="carte_2">
+                            Bureaux ou Locaux
+                        </div>
+                    </label>
+
+                    <label for="dirigeant">
+                        <input type="radio" name="dirigeant" id="dirigeant">
+                        <div class="carte" id="carte_3">
+                            Responsabilité Dirigeant
+                        </div>
+                    </label>
+
+                    <br>
+
+
+                    <!--ligne 2-->
+                    <label for="protection">
+                        <input type="radio" name="protection" id="protection">
+                        <div class="carte" id="carte_4">
+                            Protection Juridique
+                        </div>
+                    </label>
+
+                    <label for="perte">
+                        <input type="radio" name="perte" id="perte">
+                        <div class="carte" id="carte_5">
+                            Perte de revenus
+                        </div>
+                    </label>
+
+                    <label for="cyber">
+                        <input type="radio" name="cyber" id="cyber">
+                        <div class="carte" id="carte_6">
+                            Cyber risques
+                        </div>
+                    </label>
+
+                    <br>
+
+                    <input type="button" value="Etape suivante" class="red_button" id="etape_suivante">
+                </div>
+                <!--Partie 3-->
+                <div id="part_3">
+                    <!--Colonne de gauche-->
+                    <div class="col_gauche">
+                        <!--Titre en gras-->
+                        <p class="info_1">Le preneur d'assurance</p>
+
+                        <!--Genre-->
+                        <p class="demande">Titre : </p>
+                        <div class="genre">Madame</div>
+                        <div class="genre">Monsieur</div>
+
+                        <!--Nom-->
+                        <label for="nom">
+                            <p class="demande">Nom :</p>
+                            <input type="text" name="nom" id="nom" class="champ" placeholder="Votre nom">
+                        </label>
+                        
+                        <!--Prenom-->
+                        <label for="prenom">
+                            <p class="demande">Prénom :</p>
+                            <input type="text" name="prenom" id="prenom" class="champ" placeholder="Votre prénom">
+                        </label>
+                        
+                        <!--E-mail-->
+                        <label for="email">
+                            <p class="demande">Email professionnel :</p>
+                            <input type="email" name="email" id="email" class="champ" placeholder="Votre email professionnel">
+                        </label>
+                        
+                        <!--Téléphone-->
+                        <label for="tel">
+                            <p class="demande">Numero de téléphone professionnel</p>
+                            <input type="text" name="tel" id="tel" class="champ" placeholder="Votre numéro de téléphone professionenel">
+                        </label>
+                        
+                    </div>
+
+                    <!--Colorne de droite-->
+                    <div class="col_droite">
+
+                        <!--Titre en gras-->
+                        <p class="info_2">Son entreprise</p>
+
+                        <label for="siret">
+                            <p class="demande">Siren / Siret :</p>
+                            <input type="text" name="siret" id="siret" class="champ">
+                        </label>
+                        
+                        <label for="entreprise">
+                            <p class="demande">Nom de l'entreprise :</p>
+                            <input type="text" name="entreprise" id="entreprise" class="champ">
+                        </label>
+
+                        <label for="adresse">
+                            <p class="demande">Adresse de l'entreprise :</p>
+                            <input type="text" name="adresse" id="adresse" class="champ">
+                        </label>
+                        
+                        <label for="postal">
+                            <p class="demande">Code postal :</p>
+                            <input type="text" name="postal" id="postal" class="champ">
+                        </label>
+                        
+                        <label for="ville">
+                            <p class="demande">Ville de l'entreprise :</p>
+                            <input type="text" name="ville" id="ville" class="champ">
+                        </label>
+
+                    </div>
+
+                    <br>
+
+                    <!--Refus de démarches-->
+                    <input type="checkbox" name="je_moppose" id="je_m_oppose"><p class="non">Je m’oppose à ce que mon numéro de téléphone et mon adresse email soient utilisés pour recevoir des offres <br> commerciales d’Hiscox</p>
+
+                    <!--Conteneur calendrier date et heure-->
+                    <div class="date_heure">
+
+                        <!--Date-->
+                        <div class="calendrier">
+
+                        </div>
+
+                        <!--Heure-->
+                        <div class="heure">
+
+                        </div>
+
+                        <p class="ML">
+                            Les données personnelles fournies seront utilisées pour vous adresser le devis que vous sollicitez et pour la gestion de votre contrat d’assurance.
+                            Hiscox traitre vos données personnelles avec le plus grand soin et ne les vend pas à des tiers à des fins de marketing. 
+                            En cliquant sur «Valider», je déclare avoir pris connaissance de la notice d’information relative au traitement de mes données personnelles.
+                        </p>
+                    </div>
+
+                    <!--Bouton précédent-->
+                    <input type="button" value="Changer mes besoins" class="go_back" id="go_back">
+
+                    <!--Bouton suivant-->
+                    <input type="button" value="Etape suivante" class="go_next" id="go_next">
+                </div>
+
+                <!--Partie 4-->
+                <div id="part_4">
+
+                    <!--Image enveloppe-->
+                    <div class="cont_enveloppe"><img src="" alt=""></div>
+
+                    <!--Ligne 1-->
+                    <p class="l1">Merci, nous vous confirmons votre rendez-vous</p>
+
+                    <!--Paragraphe l2-3-->
+                    <p class="l2-3">Vous allez recvoir une confirmation de rendez-vous <br> sur votre adresse email.</p>
+
+                    <!--Ligne 4-->
+                    <p class="l4">Un conseiller prendra contact avec vous le ... à ... </p>
+
+
+                    <!--Ligne 1 cartes-->
+                    <label for="responsabilite">
+                        <input type="radio" name="responsabilite" id="responsabilite">
+                        <div class="carte" id="carte_1">
+                            Responsabilité Civile Décénnale
+                        </div>
+                    </label>
+
+                    <label for="bureaux">
+                        <input type="radio" name="bureaux" id="bureaux">
+                        <div class="carte" id="carte_2">
+                            Bureaux ou Locaux
+                        </div>
+                    </label>
+
+                    <label for="dirigeant">
+                        <input type="radio" name="dirigeant" id="dirigeant">
+                        <div class="carte" id="carte_3">
+                            Responsabilité Dirigeant
+                        </div>
+                    </label>
+
+
+                    <!--ligne 2 cartes-->
+                    <label for="protection">
+                        <input type="radio" name="protection" id="protection">
+                        <div class="carte" id="carte_4">
+                            Protection Juridique
+                        </div>
+                    </label>
+
+                    <label for="perte">
+                        <input type="radio" name="perte" id="perte">
+                        <div class="carte" id="carte_5">
+                            Perte de revenus
+                        </div>
+                    </label>
+
+                    <label for="cyber">
+                        <input type="radio" name="cyber" id="cyber">
+                        <div class="carte" id="carte_6">
+                            Cyber risques
+                        </div>
+                    </label>
+
+                    <br>
+
+                    <input type="button" value="Retourner à l'acceuil" class="retour_acceuil" id="retour_acceuil">
+                </div>
+            </form>
+            
+        </fieldset>
+
+
+    </body>
+
+</body>
+
+</html>
