@@ -1,37 +1,247 @@
-.carte {
-  width: 207px;
-  height: 184px;
-  display: inline-block;
-  background-color: #FFF6FC;
-  text-align: center;
-  border: black solid 1px;
+body {
+  background-color: #bd95d7;
+}
+
+.page_blanche {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: none;
   border-radius: 20px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
-.col_gauche {
-  display: inline-block;
-}
-
-.col_droite {
-  display: inline-block;
+.champ {
+  width: 90%;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid #e7e4e9;
 }
 
 input[type=radio] {
   display: none;
 }
 
-input[type=text] {
-  width: 360px;
-  height: 48px;
-  border-radius: 24px;
-  border: black solid 1px;
-  color: #BEBEBE;
+.red_button {
+  width: 159px;
+  height: 50px;
+  background-color: #DA291C;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 
-input[type=email] {
-  width: 360px;
-  height: 48px;
-  border-radius: 24px;
-  border: black solid 1px;
-  color: #BEBEBE;
+.obtenir {
+  display: inline-block;
+  width: 159px;
+  height: 50px;
+  background-color: #DA291C;
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+
+.go_back {
+  border: #DA291C 1px solid;
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  color: #DA291C;
+  border-radius: 25px;
+}
+
+.go_next {
+  width: 159px;
+  height: 50px;
+  background-color: #DA291C;
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+
+.retour_acceuil {
+  width: 159px;
+  height: 50px;
+  background-color: #DA291C;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.appel {
+  border: #DA291C 1px solid;
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  color: #DA291C;
+  border-radius: 25px;
+}
+
+#search_bar {
+  display: inline-block;
+}
+
+.conteneur_etapes {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conteneur_info {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #8202DA;
+  border-radius: 9px;
+  background-color: #8202DA;
+  display: block;
+  margin-left: 100px;
+  font-size: 16px;
+}
+
+.conteneur_info:hover {
+  background-color: #FFF6FC;
+  color: #8202DA;
+  border: 1px solid #8202DA;
+}
+
+.conteneur_carte {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.demande {
+  color: #8202DA;
+}
+
+.carte {
+  background-color: #FFF6FC;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 207px;
+  height: 184px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+  margin-right: 24px;
+}
+
+.carte:hover {
+  background-color: #bd95d7;
+  color: #FFF6FC;
+}
+
+label input[tyoe=radio]:checked ~ .carte {
+  background-color: #8202DA;
+}
+
+.col_gauche {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+}
+
+.col_droite {
+  display: inline-block;
+  width: 45%;
+  height: 45%;
+}
+
+.domaine {
+  display: inline-block;
+  width: 24%;
+}
+
+.activite {
+  display: inline-block;
+  width: 24%;
+}
+
+.chiffre {
+  display: inline-block;
+  width: 24%;
+}
+
+.remplissage_1 {
+  -webkit-animation: remplissage_1 1 1s ease forwards;
+          animation: remplissage_1 1 1s ease forwards;
+  width: 0px;
+  height: 3px;
+  background-color: #8202DA;
+}
+
+.remplissage_2 {
+  -webkit-animation: remplissage_2 1 1s ease forwards;
+          animation: remplissage_2 1 1s ease forwards;
+  width: 0px;
+  height: 3px;
+  background-color: #8202DA;
+}
+
+.remplissage_3 {
+  -webkit-animation: remplissage_3 1 1s ease forwards;
+          animation: remplissage_3 1 1s ease forwards;
+  width: 0px;
+  height: 3px;
+  background-color: #8202DA;
+}
+
+@-webkit-keyframes remplissage_1 {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+@keyframes remplissage_1 {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@-webkit-keyframes remplissage_2 {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@keyframes remplissage_2 {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@-webkit-keyframes remplissage_3 {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@keyframes remplissage_3 {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 100px;
+  }
 }

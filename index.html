@@ -17,9 +17,10 @@
         </nav>
 
         <!--Barre de recherche-->
-        <a href="#">
-            <input type="text" name="recherche" id="recherche" placeholder="Une question?" class="barre_recherche">
-        </a>
+        <div class="head_div" id="search_bar">
+            <input type="text" name="recherche" id="champ_recherche" class="champ" placeholder="Une question?">
+        </div>
+
 
         <!--Logo Hiscox centré-->
         <div class="conteneur_logo">
@@ -33,15 +34,40 @@
 
         <!--Bouton mon espace-->
         <a href="#" class="hidden" id="hidden_1">
-            <input type="button" value="Mon espace">
+            <input type="button" value="Mon espace" class="red_button">
         </a>
 
         <!--Barre de progression-->
-        <img src="img/barre_progression" alt="barre_prog" id="barre_prog" class="barre_prog">
+
+        <!--Etape 1-->
+        <div class="conteneur_etape_1">
+            <img src="" alt="" class="etape_1">
+            <p class="nom_etape">Votre activité</p>
+        </div>
+        <div class="base_1" id="base_1"></div>
         <div class="remplissage_1" id="remplissage_1"></div>
+
+        <!--Etape 2-->
+        <div class="conteneur_etape_2">
+            <img src="" alt="" class="etape_2">
+            <p class="nom_etape">Votre besoin</p>
+        </div>
+        <div class="base_2" id="base_2"></div>
         <div class="remplissage_2" id="remplissage_2"></div>
+
+        <!--Etape 3-->
+        <div class="conteneur_etape_3">
+            <img src="" alt="" class="etape_3">
+            <p class="nom_etape">Votre rendez-vous</p>
+        </div>
+        <div class="base_3" id="base_3"></div>
         <div class="remplissage_3" id="remplissage_3"></div>
 
+        <!--Etape 4-->
+        <div class="conteneur_etape_4">
+            <img src="" alt="" class="etape_4">
+            <p class="nom_etape">Votre récapitulatif</p>
+        </div>
     </header>
 
     <body>
@@ -61,7 +87,7 @@
             <form action="index.php" method="post" class="formulaire_progressif">
 
                 <!--Partie 1-->
-                <div id="part1">
+                <div id="part_1">
 
                     <!--Domaine d'activité-->
                     <label for="domaine">
@@ -98,18 +124,22 @@
                         </div>
                     </label>
 
-                    <input type="button" value="Obtenir mon devis" id="obt_devis" class="red_button">
+                    <input type="button" value="Obtenir mon devis" id="obt_devis" class="obtenir">
                 </div>
 
                 <!--Partie 2-->
-                <div id="part2">
+                <div id="part_2">
                     <p class="question">Que souhaitez-vous assurer ?</p>
 
-                    <!--ligne 1-->
+                    <div class="contenur_cartes">
+                        <!--ligne 1-->
                     <label for="responsabilite">
                         <input type="radio" name="responsabilite" id="responsabilite">
                         <div class="carte" id="carte_1">
                             Responsabilité Civile Décénnale
+                            <div class="conteneur_info">
+                                <p>i</p>
+                            </div>
                         </div>
                     </label>
 
@@ -117,6 +147,9 @@
                         <input type="radio" name="bureaux" id="bureaux">
                         <div class="carte" id="carte_2">
                             Bureaux ou Locaux
+                            <div class="conteneur_info">
+                                <p>i</p>
+                            </div>
                         </div>
                     </label>
 
@@ -124,17 +157,22 @@
                         <input type="radio" name="dirigeant" id="dirigeant">
                         <div class="carte" id="carte_3">
                             Responsabilité Dirigeant
+                            <div class="conteneur_info">
+                                <p>i</p>
+                            </div>
                         </div>
                     </label>
 
                     <br>
-
 
                     <!--ligne 2-->
                     <label for="protection">
                         <input type="radio" name="protection" id="protection">
                         <div class="carte" id="carte_4">
                             Protection Juridique
+                            <div class="conteneur_info">
+                                <p>i</p>
+                            </div>
                         </div>
                     </label>
 
@@ -142,6 +180,9 @@
                         <input type="radio" name="perte" id="perte">
                         <div class="carte" id="carte_5">
                             Perte de revenus
+                            <div class="conteneur_info">
+                                <p>i</p>
+                            </div>
                         </div>
                     </label>
 
@@ -149,8 +190,14 @@
                         <input type="radio" name="cyber" id="cyber">
                         <div class="carte" id="carte_6">
                             Cyber risques
+                            <div class="conteneur_info">
+                                <p>i</p>
+                            </div>
                         </div>
                     </label>
+
+                    </div>
+                    
 
                     <br>
 
@@ -173,25 +220,27 @@
                             <p class="demande">Nom :</p>
                             <input type="text" name="nom" id="nom" class="champ" placeholder="Votre nom">
                         </label>
-                        
+
                         <!--Prenom-->
                         <label for="prenom">
                             <p class="demande">Prénom :</p>
                             <input type="text" name="prenom" id="prenom" class="champ" placeholder="Votre prénom">
                         </label>
-                        
+
                         <!--E-mail-->
                         <label for="email">
                             <p class="demande">Email professionnel :</p>
-                            <input type="email" name="email" id="email" class="champ" placeholder="Votre email professionnel">
+                            <input type="email" name="email" id="email" class="champ"
+                                placeholder="Votre email professionnel">
                         </label>
-                        
+
                         <!--Téléphone-->
                         <label for="tel">
                             <p class="demande">Numero de téléphone professionnel</p>
-                            <input type="text" name="tel" id="tel" class="champ" placeholder="Votre numéro de téléphone professionenel">
+                            <input type="text" name="tel" id="tel" class="champ"
+                                placeholder="Votre numéro de téléphone professionenel">
                         </label>
-                        
+
                     </div>
 
                     <!--Colorne de droite-->
@@ -204,7 +253,7 @@
                             <p class="demande">Siren / Siret :</p>
                             <input type="text" name="siret" id="siret" class="champ">
                         </label>
-                        
+
                         <label for="entreprise">
                             <p class="demande">Nom de l'entreprise :</p>
                             <input type="text" name="entreprise" id="entreprise" class="champ">
@@ -214,12 +263,12 @@
                             <p class="demande">Adresse de l'entreprise :</p>
                             <input type="text" name="adresse" id="adresse" class="champ">
                         </label>
-                        
+
                         <label for="postal">
                             <p class="demande">Code postal :</p>
                             <input type="text" name="postal" id="postal" class="champ">
                         </label>
-                        
+
                         <label for="ville">
                             <p class="demande">Ville de l'entreprise :</p>
                             <input type="text" name="ville" id="ville" class="champ">
@@ -230,10 +279,12 @@
                     <br>
 
                     <!--Refus de démarches-->
-                    <input type="checkbox" name="je_moppose" id="je_m_oppose"><p class="non">Je m’oppose à ce que mon numéro de téléphone et mon adresse email soient utilisés pour recevoir des offres <br> commerciales d’Hiscox</p>
+                    <input type="checkbox" name="je_moppose" id="je_m_oppose">
+                    <p class="non">Je m’oppose à ce que mon numéro de téléphone et mon adresse email soient utilisés
+                        pour recevoir des offres <br> commerciales d’Hiscox</p>
 
                     <!--Conteneur calendrier date et heure-->
-                    <div class="date_heure">
+                    <div class="php_zone">
 
                         <!--Date-->
                         <div class="calendrier">
@@ -246,17 +297,22 @@
                         </div>
 
                         <p class="ML">
-                            Les données personnelles fournies seront utilisées pour vous adresser le devis que vous sollicitez et pour la gestion de votre contrat d’assurance.
-                            Hiscox traitre vos données personnelles avec le plus grand soin et ne les vend pas à des tiers à des fins de marketing. 
-                            En cliquant sur «Valider», je déclare avoir pris connaissance de la notice d’information relative au traitement de mes données personnelles.
+                            Les données personnelles fournies seront utilisées pour vous adresser le devis que vous
+                            sollicitez et pour la gestion de votre contrat d’assurance.
+                            Hiscox traitre vos données personnelles avec le plus grand soin et ne les vend pas à des
+                            tiers à des fins de marketing.
+                            En cliquant sur «Valider», je déclare avoir pris connaissance de la notice d’information
+                            relative au traitement de mes données personnelles.
                         </p>
                     </div>
 
-                    <!--Bouton précédent-->
-                    <input type="button" value="Changer mes besoins" class="go_back" id="go_back">
+                    <div class="conteneur_etapes">
+                        <!--Bouton précédent-->
+                        <input type="button" value="Changer mes besoins" class="go_back" id="go_back">
 
-                    <!--Bouton suivant-->
-                    <input type="button" value="Etape suivante" class="go_next" id="go_next">
+                        <!--Bouton suivant-->
+                        <input type="button" value="Etape suivante" class="go_next" id="go_next">
+                    </div>
                 </div>
 
                 <!--Partie 4-->
@@ -325,7 +381,7 @@
                     <input type="button" value="Retourner à l'acceuil" class="retour_acceuil" id="retour_acceuil">
                 </div>
             </form>
-            
+
         </fieldset>
 
 

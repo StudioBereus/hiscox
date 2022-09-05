@@ -1,42 +1,326 @@
 //Variables
 $bg-onclick-carte: #8202DA;
 $bg-carte: #FFF6FC;
+$bg_hover_carte: #bd95d7;
+$bg-button: #DA291C;
+
+//Génériques 
+body{
+    background-color: #bd95d7;
+
+}
+header{
+
+}
+footer{
+
+}
+.nav{
+
+}
 
 
 
-//Divs
-.carte{
-    width: 207px;
-    height: 184px;
-    display: inline-block;
-    background-color: $bg-carte;
-    text-align: center;
-    border: black solid 1px;
+//Fieldset
+.page_blanche{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: none;
     border-radius: 20px;
-}
-.col_gauche{
-    display: inline-block;
-}
-.col_droite{
-    display: inline-block;
+    padding-left: auto;
+    padding-right: auto;
 }
 
+//Formulaire
+.formulaire_progressif{
 
-//Inputs
+}
+//Parties de formulaire
+#part_1{
+
+}
+#part_2{
+
+}
+#part_3{
+
+}
+#part_4{
+
+}
+
+//Select
+#choix_domaine{
+
+}
+#choix_activite{
+
+}
+
+//Input type text
+.champ{
+    width: 90%;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #e7e4e9;
+}
+//Input type number 
+input[type=number]{
+
+}
+
+//Input type radio
 input[type=radio]{
     display: none;
 }
-input[type=text]{
-    width: 360px;
-    height: 48px;
-    border-radius: 24px;
-    border: black solid 1px;
-    color: #BEBEBE;
-}
+
+//Input type email
 input[type=email]{
-    width: 360px;
-    height: 48px;
-    border-radius: 24px;
-    border: black solid 1px;
-    color: #BEBEBE;
+
+}
+
+//Input type checkbox
+input[type=checkbox]{
+
+}
+
+//Input type button
+.red_button{
+    width: 159px;
+    height: 50px;
+    background-color: $bg-button;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+} 
+.obtenir{
+    display: inline-block;
+    width: 159px;
+    height: 50px;
+    background-color: $bg-button;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+.go_back{
+    border: $bg-button 1px solid;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: $bg-button;
+    border-radius: 25px;
+
+}
+.go_next{
+    width: 159px;
+    height: 50px;
+    background-color: $bg-button;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+.retour_acceuil{
+    
+    width: 159px;
+    height: 50px;
+    background-color: $bg-button;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.appel{
+    border: $bg-button 1px solid;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: $bg-button;
+    border-radius: 25px;
+}
+#search_bar{
+    display: inline-block;
+}
+.conteneur_etapes{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.conteneur_info{
+    width: 18px;
+    height: 18px;
+    border: 1px solid $bg-onclick-carte;
+    border-radius: 9px;
+    background-color: $bg-onclick-carte;
+    display: block;
+    margin-left: 100px;
+    font-size: 16px;
+}
+.conteneur_info:hover{
+    background-color: #FFF6FC;
+    color: $bg-onclick-carte;
+    border: 1px solid $bg-onclick-carte;
+}
+.conteneur_carte{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+//Text
+.question{
+
+}
+.demande{
+    color: $bg-onclick-carte;
+
+}
+.ML{
+
+}
+//Carte 
+.carte{
+    background-color: $bg-carte;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 207px;
+    height: 184px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+
+.carte:hover{
+    background-color: $bg_hover_carte;
+    color: #FFF6FC;
+}
+label input[tyoe=radio]:checked~.carte{
+    background-color: $bg-onclick-carte;
+}
+.presentation{
+
+}
+.votre_attestation{
+
+}
+
+//Div images 
+
+//Divs de séparation 
+.col_gauche{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}
+.col_droite{
+    display: inline-block;
+    width: 45%;
+    height: 45%;
+}
+.domaine{
+    display: inline-block;
+    width: 24%;
+
+}
+.activite{
+    display: inline-block;
+    width: 24%;
+}
+.chiffre{
+    display: inline-block;
+    width: 24%;
+}
+
+//Zone de date, heure, calendrier
+
+.calendrier{
+
+}
+.heure{
+
+}
+.php_zone{
+
+}
+
+//Conteneurs images 
+.cont_envelloppe{
+
+}
+.conteneur_logo{
+
+}
+
+//Barre de progression
+.remplissage_1{
+    animation: remplissage_1 1 1s ease forwards;
+    width: 0px;
+    height: 3px;
+    background-color: $bg-onclick-carte;
+}
+.remplissage_2{
+    animation: remplissage_2 1 1s ease forwards;
+    width: 0px;
+    height: 3px;
+    background-color: $bg-onclick-carte;
+}
+.remplissage_3{
+    animation: remplissage_3 1 1s ease forwards;
+    width: 0px;
+    height: 3px;
+    background-color: $bg-onclick-carte;
+}
+
+//etoiles
+.avis{
+
+}
+.etoiles_no_bg{
+
+}
+.etoiles_jaune{
+
+}
+
+
+//ANIMATIONS
+
+//Remplissage des barres 
+@keyframes remplissage_1{
+    0%{
+        width: 100px;
+
+    } 
+    100%{
+        width: 100px;
+    }
+}
+@keyframes remplissage_2{
+    0%{
+        width: 100px;
+
+    } 
+    100%{
+        width: 100px;
+    }
+}
+@keyframes remplissage_3{
+    0%{
+        width: 100px;
+
+    } 
+    100%{
+        width: 100px;
+    }
 }
