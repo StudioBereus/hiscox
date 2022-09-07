@@ -8,6 +8,7 @@ $light_grey:#e7e4e9;
 ///////////////////Génériques/////////////////// 
 body{
     background-image: url('img/hiscox_bg.png');
+
 }
 header{
     background-color: white;
@@ -50,13 +51,16 @@ header{
 
 /////////////////// Inputs ///////////////////
 
+//Type checkbox
+
 //Type text
 .champ{
-    width: 90%;
+    width: 97%;
     height: 48px;
     border-radius: 24px;
     border: 1px solid $light_grey;
     padding-left: 5%;
+    outline: none;
 }
 .champ::placeholder{
     color: $light_grey;
@@ -64,11 +68,13 @@ header{
 
 #search_bar{
     display: inline-block;
+    outline: none;
 }
 
 #champ_recherche{
     margin-left: 3%;
     margin-right: 2%;
+    outline: none;
 }
 
 //Tyoe number
@@ -77,6 +83,7 @@ input[type=number]{
     border-radius: 24px;
     width: 90%;
     padding-left: 5%;
+    outline: none;
 }
 
 //Type radio
@@ -188,9 +195,7 @@ label input[type=radio]:checked~.carte_2{
     color: white;
     font-size: 25px;
 }
-.ML{
 
-}
 .info_1{
     font-weight: bold;
 }
@@ -207,6 +212,20 @@ label input[type=radio]:checked~.carte_2{
     font-size: 48px;
 }
 
+
+.l1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+.l2-3{
+    text-align: center;
+    font-size: 17px;
+}
+.l4{
+    text-align: center;
+    font-size: 17px;
+}
 /////////////////// Cartes ///////////////////
 
 
@@ -214,7 +233,7 @@ label input[type=radio]:checked~.carte_2{
     background-color: $bg-carte;
     border: 1px solid black;
     border-radius: 20px;
-    width: 207px;
+    width: 30%;
     height: 184px;
     display: inline-block;
     text-align: center;
@@ -234,7 +253,7 @@ label input[type=radio]:checked~.carte_2{
     background-color: $bg-carte;
     border: 1px solid black;
     border-radius: 20px;
-    width: 207px;
+    width: 30%;
     height: 184px;
     display: inline-block;
     text-align: center;
@@ -335,14 +354,13 @@ label input[type=radio]:checked~.carte_2{
 .recommande{
     width: 40%;
     height: 32px;
+    justify-self: start;
     background-color: $bg-carte;
     color: $main-violet;
     border: none;
     border-radius: 16px;
 }
-.cont_text{
-    
-}
+
 
 //Partie trois
 .col_gauche{
@@ -355,7 +373,7 @@ label input[type=radio]:checked~.carte_2{
     margin-left: 5%;
 }
 .choix_genre{
-    width: 45%;
+    width: 47%;
     height: 48px;
     border: #e7e4e9 1px solid;
     background-color: white;
@@ -363,6 +381,8 @@ label input[type=radio]:checked~.carte_2{
     display: inline-block;
     border-radius: 24px;
     cursor: pointer;
+    margin-right: 2%;
+    margin-left: 0%;
 }
 .choix_genre:hover{
     background-color: $bg_hover_carte;
@@ -407,6 +427,13 @@ label input[type=radio]:checked~.choix_genre{
     margin-left: 30%;
     margin-right: 18%;
 
+}
+
+.cont_enveloppe{
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 
 /////////////////// Animations ///////////////////

@@ -136,15 +136,13 @@
                     <div class="contenur_cartes">
                         <!--ligne 1-->
                     <label for="responsabilite">
-                        <input type="radio" name="carte" id="responsabilite">
+                        <input type="radio" name="carte" id="responsabilite" checked>
                         <div class="carte" id="carte_1">
                             Responsabilité Civile Décénnale
                             <div class="conteneur_info">
                                 i
                             </div>
-                            <div class="recommande">
-                                Recommandé
-                            </div>
+                            
                         </div>
                     </label>
 
@@ -226,7 +224,7 @@
                         </label>
 
                         <label for="monsieur">
-                            <input type="radio" name="genre" id="monsieur" >
+                            <input type="radio" name="genre" id="monsieur">
                             <div class="choix_genre">
                                 <p>Monsieur</p>
                             </div>
@@ -235,27 +233,26 @@
                         <!--Nom-->
                         <label for="nom">
                             <p class="demande">Nom :</p>
-                            <input type="text" name="nom" id="nom" class="champ" placeholder="Votre nom">
+                            <input type="text" name="nom" id="nom" class="champ" placeholder="Votre nom" required>
                         </label>
 
                         <!--Prenom-->
                         <label for="prenom">
                             <p class="demande">Prénom :</p>
-                            <input type="text" name="prenom" id="prenom" class="champ" placeholder="Votre prénom">
+                            <input type="text" name="prenom" id="prenom" class="champ" placeholder="Votre prénom" required>
                         </label>
 
                         <!--E-mail-->
                         <label for="email">
                             <p class="demande">Email professionnel :</p>
-                            <input type="email" name="email" id="email" class="champ"
+                            <input type="email" name="email" id="email" class="champ" required
                                 placeholder="Votre email professionnel">
                         </label>
 
                         <!--Téléphone-->
                         <label for="tel">
                             <p class="demande">Numero de téléphone professionnel :</p>
-                            <input type="text" name="tel" id="tel" class="champ"
-                                placeholder="Votre numéro de téléphone professionenel">
+                            <input type="text" name="tel" id="tel" class="champ"placeholder="Votre numéro de téléphone professionenel" required>
                         </label>
 
                     </div>
@@ -268,27 +265,27 @@
 
                         <label for="siret">
                             <p class="demande">Siren / Siret :</p>
-                            <input type="text" name="siret" id="siret" class="champ" placeholder="Votre numéro de Siren / Siret">
+                            <input type="text" name="siret" id="siret" class="champ" placeholder="Votre numéro de Siren / Siret" required>
                         </label>
 
                         <label for="entreprise">
                             <p class="demande">Nom de l'entreprise :</p>
-                            <input type="text" name="entreprise" id="entreprise" class="champ" placeholder="Nom de votre entreprise">
+                            <input type="text" name="entreprise" id="entreprise" class="champ" placeholder="Nom de votre entreprise" required>
                         </label>
 
                         <label for="adresse">
                             <p class="demande">Adresse de l'entreprise :</p>
-                            <input type="text" name="adresse" id="adresse" class="champ" placeholder="Numéro et voie">
+                            <input type="text" name="adresse" id="adresse" class="champ" placeholder="Numéro et voie" required>
                         </label>
 
                         <label for="postal">
                             <p class="demande">Code postal :</p>
-                            <input type="text" name="postal" id="postal" class="champ" placeholder="Code postal">
+                            <input type="text" name="postal" id="postal" class="champ" placeholder="Code postal" required>
                         </label>
 
                         <label for="ville">
                             <p class="demande">Ville de l'entreprise :</p>
-                            <input type="text" name="ville" id="ville" class="champ" placeholder="Ville">
+                            <input type="text" name="ville" id="ville" class="champ" placeholder="Ville" required>
                         </label>
 
                     </div>
@@ -336,7 +333,7 @@
                 <div id="part_4">
 
                     <!--Image enveloppe-->
-                    <div class="cont_enveloppe"><img src="" alt=""></div>
+                    <div class="cont_enveloppe"><img src="img/pastille_enveloppe.png" alt="enveloppe"></div>
 
                     <!--Ligne 1-->
                     <p class="l1">Merci, nous vous confirmons votre rendez-vous</p>
@@ -349,25 +346,25 @@
 
 
                     <!--Ligne 1 cartes-->
-                    <label for="responsabilite">
-                        <input type="radio" name="carte_2" id="responsabilite">
-                        <div class="carte_2" id="carte_1">
+                    <label for="responsabilite2">
+                        <input type="radio" name="carte_2" id="responsabilite2">
+                        <div class="carte" id="carte_1">
                             <div class="cont_text">
                                 Responsabilité Civile Décénnale
                             </div>
                         </div>
                     </label>
 
-                    <label for="bureaux">
-                        <input type="radio" name="carte_2" id="bureaux">
-                        <div class="carte_2" id="carte_2">
+                    <label for="bureaux2">
+                        <input type="radio" name="carte_2" id="bureaux2">
+                        <div class="carte" id="carte_2">
                             Bureaux ou Locaux
                         </div>
                     </label>
 
-                    <label for="dirigeant">
-                        <input type="radio" name="carte_2" id="dirigeant">
-                        <div class="carte_2" id="carte_3">
+                    <label for="dirigeant2">
+                        <input type="radio" name="carte_2" id="dirigeant2">
+                        <div class="carte" id="carte_3">
                             Responsabilité Dirigeant
                         </div>
                     </label>
@@ -375,23 +372,23 @@
                     <br>
 
                     <!--ligne 2 cartes-->
-                    <label for="protection">
-                        <input type="radio" name="carte_2" id="protection">
-                        <div class="carte_2" id="carte_4">
+                    <label for="protection2">
+                        <input type="radio" name="carte_2" id="protection2">
+                        <div class="carte" id="carte_4">
                             Protection Juridique
                         </div>
                     </label>
 
-                    <label for="perte">
-                        <input type="radio" name="carte_2" id="perte">
-                        <div class="carte_2" id="carte_5">
+                    <label for="perte2">
+                        <input type="radio" name="carte_2" id="perte2">
+                        <div class="carte" id="carte_5">
                             Perte de revenus
                         </div>
                     </label>
 
-                    <label for="cyber">
-                        <input type="radio" name="carte_2" id="cyber">
-                        <div class="carte_2" id="carte_6">
+                    <label for="cyber2">
+                        <input type="radio" name="carte_2" id="cyber2">
+                        <div class="carte" id="carte_6">
                             Cyber risques
                         </div>
                     </label>
